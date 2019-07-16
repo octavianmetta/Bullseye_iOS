@@ -37,6 +37,11 @@ class ViewController: UIViewController {
         else {
             resultLabel.text = "Mata kebo"
             resultLabel.backgroundColor = UIColor.green
+            let alert = UIAlertController(title: "Congrats", message: "Mata kebo", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion:  nil)
         }
     }
 }
